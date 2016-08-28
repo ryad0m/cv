@@ -12,4 +12,4 @@ deploy:
   - _build/cv_7.pdf
   skip_cleanup: true
   on:
-    tags: true
+    tags: false
