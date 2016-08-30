@@ -6,12 +6,12 @@ before_install:
   texlive-full
 script:
 - mkdir _build
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build cv/cv_7.tex
+- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build src/cv.tex
 deploy:
   provider: releases
   api_key:
     secure: ddYdgAnnv0BYgSE9Z1XoOTRBfXnAg9oKaYARRxtDsT22mWS3mNwhh5AbRyQu5hxEi5J7fSqrX9KNNCHlbR2C1LB+DPhwb3O+3FHVjHVVhXdeH9/WxfQu4iPB9Q6be7MFByAGhm/RuzDi+gGPP84Y1683NC3+9jO4/RpbuL5D8azPOXnVzyKGSEdOpReArLcgTWdvX0V5B3+/sTnZsYtitn33U3ZH/2VW5eJSXjfSs/v/gcQCIVXqz+qcMVCFJhDsfjJ+nALUQnUY82RVdxuK8Odvg34sz4+wPHC9JOhY8DM3YOxtRq/KqLK1RWEtCj6yqFGHMXLXOHgaS6KSVzaclEfEXs6l3Ru+HW6M1xYKeEUm8lzUWlexV3R2z3pxKnOf8lgbaq4s/j6pG/Ddgu6Yjn6Mqp7O5xY8hAz9VolCSJ6KjW3nobPjg3CYRaCy4OubzC82dpfGbHxTuJ5fNMgTR+r7QtGTwY8B0Jdxt06EMeykgb4t5ZyXI5pKJVYzjOSI3LaEFp4KEWkhg+D3N9dR1AKQweCmth+PNPO2ORqd7PWe3WOO4JJ7bKwEs52dc89//29n7Xuwbhbyw/hHI9clUOobDNlhT32MVn9HVVyBvA+4i8K5nFy2z/B/IgnunWx4OJ309NNYJ35ttno49QBntqP1C152d0qLntybAKJSiXU=
-  file: _build/cv_7.pdf
+  file: _build/cv.pdf
   skip_cleanup: true
   on:
     repo: ryad0m/cv
