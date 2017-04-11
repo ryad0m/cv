@@ -16,4 +16,3 @@ deploy:
   overwrite: true
   on:
     repo: ryad0m/cv
-    tags: true
